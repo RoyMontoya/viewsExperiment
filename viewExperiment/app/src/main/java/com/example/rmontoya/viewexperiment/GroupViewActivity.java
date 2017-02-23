@@ -25,15 +25,12 @@ public class GroupViewActivity extends AppCompatActivity {
         LinearLayout firstLayout = createLinearLayout("TextView 1", "#222222");
         LinearLayout secondLayout = createLinearLayout("TextView 2", "#000FFF");
         LinearLayout thirdLayout = createLinearLayout("TextView 3", "#00FF00");
-        LinearLayout fourthLayout = createLinearLayout("TextView 4", "#FF0FFF");
-        LinearLayout mehLayout = createLinearLayout("TextView 5", "#000000");
+
 
         // add views to our base layout
         baseLayout.addView(firstLayout);
         baseLayout.addView(secondLayout);
         baseLayout.addView(thirdLayout);
-        baseLayout.addView(fourthLayout);
-        baseLayout.addView(mehLayout);
 
         firstLayout.setClickable(true);
         firstLayout.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +49,6 @@ public class GroupViewActivity extends AppCompatActivity {
 
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
-        lp.gravity = Gravity.CENTER;
 
         linearLayout.setLayoutParams(lp);
         linearLayout.setMinimumHeight(getInDpi(100));
