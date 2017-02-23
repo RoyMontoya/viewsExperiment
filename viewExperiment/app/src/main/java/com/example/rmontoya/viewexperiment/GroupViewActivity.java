@@ -52,7 +52,6 @@ public class GroupViewActivity extends AppCompatActivity {
 
         linearLayout.setLayoutParams(lp);
         linearLayout.setMinimumHeight(getInDpi(100));
-        linearLayout.setGravity(View.TEXT_ALIGNMENT_CENTER);
         linearLayout.setBackgroundColor(Color.parseColor(colorBackground));
 
         TextView textView1 = new TextView(this);
